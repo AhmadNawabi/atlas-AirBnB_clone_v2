@@ -21,7 +21,7 @@ def hbnb():
 
 @app.route("/c/<text>", strict_slashes=False)
 def text_display(text):
-    """define the (/c/<text>) 
+    """define the (/c/<text>)
     route to display text"""
     """Replace the _ with space in text"""
     formated_text = text.replace("_", " ")
@@ -31,12 +31,12 @@ def text_display(text):
 @app.route("/python", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
 def python_display(text="is cool"):
-    """Define the (/python/<text>) 
+    """Define the (/python/<text>)
     to display the text"""
     """Replace the _ with space in text"""
     text_formated = text.replace("_", " ")
     return f"Python {text_formated}"
- 
+
 
 if __name__ == "__main__":
     """Run the app to host=0.0.0.0 and port=5000"""
