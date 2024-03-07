@@ -28,6 +28,7 @@ def text_display(text):
     return f"C {formated_text}"
 
 
+@app.route("/python", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
 def python_display(text="is cool"):
     """Define the (/python/<text>) 
@@ -38,4 +39,5 @@ def python_display(text="is cool"):
  
 
 if __name__ == "__main__":
+    """Run the app to host=0.0.0.0 and port=5000"""
     app.run(host="0.0.0.0", port=5000)
