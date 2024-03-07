@@ -6,6 +6,7 @@ from flask import Flask
 """store flask in the app variable"""
 app = Flask(__name__)
 
+
 """Define a route for the root URL
 ("/") with strict_slashes=false"""
 @app.route('/')
