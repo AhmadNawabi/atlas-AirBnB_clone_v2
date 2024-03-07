@@ -19,8 +19,8 @@ def hbnb():
     return "HBNB"
 
 
-@app.route('/c/<text>', strict_slashes=False)
-def text():
+@app.route("/c/<text>", strict_slashes=False)
+def text_display(text):
     """Define route (/c/<text>"""
     """Replace the ("_" with "" space)"""
     text_format = text.replace("_", " ")
