@@ -33,9 +33,8 @@ def pyhtonIsCool(text="is cool"):
 @app.route("/number/<n>", strict_slashes=False)
 def isInteger(n):
     """Define isInteger"""
-    num = int(n)
-    if num:
-        return f"{num} is a number"
+    """return 'n is a number only if n is integer'"""
+    return "{:d} is a number".format(n)
 
 
 if __name__ == "__main__":
