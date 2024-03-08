@@ -23,7 +23,7 @@ def cIsFun(text):
     return "C " + text.replace("_", " ")
 
 
-@app.route("/pythob", strict_slashes=False)
+@app.route("/python", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
 def pyhtonIsCool(text="is cool"):
     """Define the pytonIsCool to dispaly the text"""
@@ -33,9 +33,9 @@ def pyhtonIsCool(text="is cool"):
 @app.route("/number/<n>", strict_slashes=False)
 def isInteger(n):
     """Define isInteger"""
-    n = int(n)
-    if n:
-        return f"{n} is a number"
+    num = int(n)
+    if num:
+        return f"{num} is a number"
 
 
 if __name__ == "__main__":
