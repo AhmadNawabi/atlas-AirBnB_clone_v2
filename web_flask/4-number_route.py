@@ -30,7 +30,7 @@ def pyhtonIsCool(text="is cool"):
     return "Pyhton " + text.replace("_", " ")
 
 
-@app.route("/number/<n>", strict_slashes=False)
+@app.route("/number/<int:n>", strict_slashes=False)
 def isInteger(n):
     """Define isInteger"""
     """return 'n is a number only if n is integer'"""
