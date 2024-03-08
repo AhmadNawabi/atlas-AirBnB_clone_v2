@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-
-"""import flask and render_template to start 
+"""import flask and render_template to start
    Flask application
 """
 from flask import Flask, render_template
@@ -49,7 +48,8 @@ def numberOddOrEven(n):
     """Determine if the number is even or odd"""
     result = "even" if n %2 == 0 else "odd"
     """Render the template with the determined result"""
-    return render_template("6-number_odd_or_even.html", n=n, result=result)
+    return render_template("6-number_odd_or_even.html",
+                           n=n, result=result)
 
 
 if __name__ == "__main__":
