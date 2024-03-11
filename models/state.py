@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""holds class State"""
+"""Holds class State."""
 import models
 from models.base_model import BaseModel, Base
 from models.city import City
@@ -10,7 +10,7 @@ from sqlalchemy.orm import relationship
 
 
 class State(BaseModel, Base):
-    """Representation of state """
+    """Representation of state."""
     if models.storage_t == "db":
         __tablename__ = 'states'
         name = Column(String(128), nullable=False)
@@ -18,13 +18,13 @@ class State(BaseModel, Base):
     else:
         name = ""
 
-
-        @property
-        def cities(self):
-            """Getter method that returns the list of City objects linked to
-            the current State."""
-            city_list = []
+    @property
+    def cities(self):
+        """Getter method that returns the list of City objects linked to
+        the current State."""
+        city_list = []
+        if models.storage_t != "db":
             for city in models.storage.all(City).values():
                 if city.state_id == self.id:
                     city_list.append(city)
-            return city_list
+        return city_list
