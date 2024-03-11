@@ -21,14 +21,8 @@ def states_list():
 @app.teardown_appcontext
 def teardown_appcontext(exception):
     """Remove the current SQLAlchemy Session"""
-
     storage.close()
 
 
 if __name__ == '__main__':
-    # Import data dumps before running the application
-    from models import db_storage
-
-    db_storage.reload()
-
     app.run(host='0.0.0.0', port=5000)
