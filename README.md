@@ -7,9 +7,8 @@ This repository contains the initial stage of a larger student project to build 
 ## 👨‍💻 About the Developer  
 Hello! My name is **Ahmad Nawabi**, a passionate **Software Engineer** focused on building impactful applications and solving real-world problems through technology.  
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/ahmadnawabi)  
-- 🌐 [Portfolio](https://github.com/ahmadnawabi/portfolio)  
-- 🐦 [Twitter](https://twitter.com/ahmadnawabi)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/ahmadshamoonnawabi/)  
+- 🌐 [Portfolio](https://ahmadnawabi.github.io/Personal_Website)   
 - 💻 [GitHub](https://github.com/ahmadnawabi)  
 
 ---
